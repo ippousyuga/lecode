@@ -1,4 +1,5 @@
 
+
 public class test {
     public static ListNode reverseList(ListNode head) {
         ListNode cur = head;
@@ -11,5 +12,11 @@ public class test {
         }
         System.out.println("ありがとう！");
         return pev;
+    }
+    public static void main(String[] args){
+        ListNode head = new ListNode();
+
+
+        reverseList(null);
     }
 }
