@@ -1,11 +1,13 @@
+package April;
+
 /**
  * Definition for singly-linked list.
- * public class ListNode {
+ * public class April.ListNode {
  *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ *     April.ListNode next;
+ *     April.ListNode() {}
+ *     April.ListNode(int val) { this.val = val; }
+ *     April.ListNode(int val, April.ListNode next) { this.val = val; this.next = next; }
  * }
  * 1、新建链表语句以及定义表头，以及最后return链表；
  * 2、判断某一链表到没到null（一直在next;
