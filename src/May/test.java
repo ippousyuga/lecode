@@ -1,13 +1,10 @@
 package May;
 
-import April.ListNode;
-
 public class test {
     public static void main(String[] args){
-        int [] gas = {1,2,3,4,3,2,4,1,5,3,2,4};
-        int [] cost = {1,1,1,3,2,4,3,6,7,4,3,1};
-        Gas_Station gas_station = new Gas_Station();
-        int result = gas_station.canCompleteCircuit(gas, cost);
+        int n = 19;
+        Happy_Number happy_number = new Happy_Number();
+        boolean result = happy_number.isHappy(n);
         System.out.println(result);
 
     }
