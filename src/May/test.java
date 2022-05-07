@@ -2,10 +2,10 @@ package May;
 
 public class test {
     public static void main(String[] args){
-        int n[] = {2,7,11,15};
-        int target = 9;
-        Two_Sum two_sum = new Two_Sum();
-        int [] result = two_sum.twoSum(n, target);
+        String a = "aa";
+        String b = "aba";
+        Ransom_Note ransom_note = new Ransom_Note();
+        boolean result = ransom_note.canConstruct(a, b);
         System.out.println(result);
 
     }
