@@ -1,11 +1,12 @@
 package May;
 
+import java.util.List;
+
 public class test {
     public static void main(String[] args){
-        String a = "aa";
-        String b = "aba";
-        Ransom_Note ransom_note = new Ransom_Note();
-        boolean result = ransom_note.canConstruct(a, b);
+        int [] a = {-1,0,1,2,-1,-4};
+        Sum_III sum_iii = new Sum_III();
+        List<List<Integer>> result = sum_iii.threeSum(a);
         System.out.println(result);
 
     }
