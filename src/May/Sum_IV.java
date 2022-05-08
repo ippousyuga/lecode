@@ -1,13 +1,14 @@
 package May;
-
 import java.util.*;
+/*
+* 与三数之和相似，两层循环+left+right
+* */
 
 public class Sum_IV {
     public List<List<Integer>> fourSum(int[] nums, int target) {
         Arrays.sort(nums);
         List<List<Integer>> result = new ArrayList<>();
         for (int i = 0; i < nums.length; i++){
-            if (nums[i] > 0) break;
             if (i > 0 && nums[i] == nums[i - 1]) continue;;
             for (int j = i + 1; j < nums.length; j++){
                 if (j > i + 1 && nums[j] == nums[j - 1]) continue;

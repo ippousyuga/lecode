@@ -4,9 +4,10 @@ import java.util.List;
 
 public class test {
     public static void main(String[] args){
-        int [] a = {-1,0,1,2,-1,-4};
-        Sum_III sum_iii = new Sum_III();
-        List<List<Integer>> result = sum_iii.threeSum(a);
+        int [] a = {2, 2, 2, 2, 2};
+        int target = 8;
+        Sum_IV sum_iv = new Sum_IV();
+        List<List<Integer>> result = sum_iv.fourSum(a, target);
         System.out.println(result);
 
     }
