@@ -6,9 +6,7 @@ public class test {
         String b = "issipi";
         int [] nums = {2,3};
         int target = 2;
-        Remove_Element remove_element = new Remove_Element();
-        int result = remove_element.removeElement(nums, target);
-        System.out.println(result);
+        Implement_Queue_using_Stacks implement_queue_using_stacks = new Implement_Queue_using_Stacks();
 
     }
 }
