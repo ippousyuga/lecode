@@ -2,16 +2,14 @@ package May;
 
 public class test {
     public static void main(String[] args){
-        String a = "abaab";
+        String a = "(){}}{";
         String b = "issipi";
         int [] nums = {2,3};
         int target = 2;
-        Implement_Stack_using_Queues implement_stack_using_queues = new Implement_Stack_using_Queues();
-        implement_stack_using_queues.push(1);
-        implement_stack_using_queues.push(2);
-        System.out.println(implement_stack_using_queues.top());
+        Valid_Parentheses valid_parentheses = new Valid_Parentheses();
+        boolean result = valid_parentheses.isValid(a);
 
-        System.out.println(implement_stack_using_queues.pop());
+        System.out.println(result);
 
     }
 }
