@@ -31,4 +31,15 @@ public class Replace_space {
         }
         return new String(ch);
     }
+
+    public static void main(String[] args){
+        String a = "c a b";
+        String b = "issipi";
+        int [] nums = {2,3};
+        int target = 2;
+        Replace_space replace_space = new Replace_space();
+        String result = replace_space.replaceSpace(a);
+        System.out.println(result);
+
+    }
 }
