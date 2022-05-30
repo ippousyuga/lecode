@@ -2,12 +2,12 @@ package May;
 
 public class test {
     public static void main(String[] args){
-        String a = "(){}}{";
+        String a = "abbaca";
         String b = "issipi";
         int [] nums = {2,3};
         int target = 2;
-        Valid_Parentheses valid_parentheses = new Valid_Parentheses();
-        boolean result = valid_parentheses.isValid(a);
+        Remove_All_Adjacent_Duplicates_In_String remove_all_adjacent_duplicates_in_string = new Remove_All_Adjacent_Duplicates_In_String();
+        String result = remove_all_adjacent_duplicates_in_string.removeDuplicates(a);
 
         System.out.println(result);
 
