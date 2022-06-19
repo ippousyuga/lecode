@@ -3,6 +3,12 @@ import May.ListNode;
 
 import java.util.*;
 
+/*
+* 144.二叉树前序遍历
+* swing.TreeNode类不好使
+* 递归写法
+* */
+
 public class Binary_Tree_Preorder_Traversal {
     public List<Integer> preorderTraversal(TreeNode root) {
         ArrayList<Integer> arrayList = new ArrayList<Integer>();
