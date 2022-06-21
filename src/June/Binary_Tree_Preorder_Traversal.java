@@ -1,7 +1,7 @@
 package June;
-import May.ListNode;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /*
 * 144.二叉树前序遍历

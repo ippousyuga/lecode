@@ -1,19 +1,11 @@
 package June;
-
-
 import java.util.*;
-
-/*102. 二叉树的层序遍历
-* 借助队列先进先出来实现层次遍历
-* 每层先进队列，然后len++
-* 在len＞0时，判断下一层次len
-* 判断完一个节点，出队进child_list。
-* 注意参数定义在哪个循环内。
-* 主要是child_len和child_list的定义。
+/*
+* 107. 二叉树的层序遍历 II
 * */
 
-public class Binary_Tree_Level_Order_Traversal {
-    public List<List<Integer>> levelOrder(TreeNode root) {
+public class Binary_Tree_Level_Order_Traversal_II {
+    public List<List<Integer>> levelOrderBottom(TreeNode root) {
         List<List<Integer>> list = new ArrayList<>();
         Queue <TreeNode> queue = new LinkedList<TreeNode>();
         if (root == null) return list;
@@ -37,8 +29,14 @@ public class Binary_Tree_Level_Order_Traversal {
             len = child_len;
             list.add(child_list);
         }
-        return list;
+        List<List<Integer>> result = new ArrayList<>();
+        len = list.size();
+        while (len >= 0){
+            len--;
+            result.add(list.get(len));
+        }
+        return result;
+
 
     }
-
 }
