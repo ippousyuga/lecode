@@ -1,8 +1,10 @@
 package May;
 import java.util.*;
-
 /*
-*
+* 先用hash存放数值-次数
+* 新建优先级队列，按值 Value 升序排的初始化方法为code 16
+* 入队时会判断与队内元素大小，确保对内为升序
+* 判断当前循环value值大于对头value ，队头出队，循环key入队
 * */
 
 public class Top_K_Frequent_Elements {
