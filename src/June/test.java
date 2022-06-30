@@ -4,18 +4,22 @@ import java.util.List;
 
 public class test {
     public static void main(String[] args){
-        int val [] = {2147483647,2147483647,2147483647};
+        int val [] = {1,2,3,4,5,6};
         TreeNode first = new TreeNode();
         TreeNode second = new TreeNode();
         TreeNode third = new TreeNode();
+        TreeNode fourth = new TreeNode();
         first.val = val[0];
+        fourth.val = val[3];
+
         first.left = second;
         first.right = third;
         second.val = val[1];
+        second.left = fourth;
         third.val = val[2];
-        Average_of_Levels_in_Binary_Tree average_of_levels_in_binary_tree = new Average_of_Levels_in_Binary_Tree();
-        List<Double> result = average_of_levels_in_binary_tree.averageOfLevels(first);
-        System.out.println(result.get(1));
+        Count_Complete_Tree_Nodes count_complete_tree_nodes = new Count_Complete_Tree_Nodes();
+        int result = count_complete_tree_nodes.countNodes(first);
+        System.out.println(result);
 
     }
 }
