@@ -1,6 +1,6 @@
 package June;
 
-import java.util.List;
+import java.util.Arrays;
 
 public class test {
     public static void main(String[] args){
@@ -17,6 +17,7 @@ public class test {
         second.val = val[1];
         second.left = fourth;
         third.val = val[2];
+        System.out.println(Arrays.binarySearch(val, 4));
         Count_Complete_Tree_Nodes count_complete_tree_nodes = new Count_Complete_Tree_Nodes();
         int result = count_complete_tree_nodes.countNodes(first);
         System.out.println(result);
