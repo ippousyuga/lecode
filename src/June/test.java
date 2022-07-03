@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 public class test {
     public static void main(String[] args){
-        int val [] = {1,2,3,4,5,6};
+        int val [] = {1};
+        int test [] = Arrays.copyOfRange(val, 1, 1);
         TreeNode first = new TreeNode();
         TreeNode second = new TreeNode();
         TreeNode third = new TreeNode();

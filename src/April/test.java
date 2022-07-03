@@ -1,5 +1,7 @@
 package April;
 
+import java.util.Arrays;
+
 public class test {
     public static ListNode reverseList(ListNode head) {
         ListNode cur = head;
@@ -15,7 +17,8 @@ public class test {
     }
     public static void main(String[] args){
         ListNode head = new ListNode();
-
+        int[] test = {1};
+        Arrays.copyOfRange(test, 1, 1);
 
         reverseList(null);
     }
