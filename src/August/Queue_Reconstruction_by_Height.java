@@ -13,6 +13,7 @@ import java.util.LinkedList;
 * */
 
 public class Queue_Reconstruction_by_Height {
+
     public int[][] reconstructQueue(int[][] people) {
         Arrays.sort(people, (a, b) -> {
             if (a[0] == b[0]) return a[1] - b[1];
