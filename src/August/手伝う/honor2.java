@@ -1,4 +1,4 @@
-package 手伝う;
+package August.手伝う;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -51,8 +51,9 @@ public class honor2 {
     }
 
 
+
     public static void main(String[] args) {
-        double [][] index = {{1,1},{2,0},{3,3},{-2,3},{0,1}};
+        double [][] index = {{200,10},{200,50},{200,30},{200,25},{108,-18}};
         honor2 h2 = new honor2();
         System.out.println(h2.gatherHoney(index));
     }

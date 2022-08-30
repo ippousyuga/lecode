@@ -1,4 +1,4 @@
-package August;
+package August.手伝う;
 
 import java.util.*;
 /*
