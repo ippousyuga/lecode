@@ -18,7 +18,6 @@ public class Minimum_Depth_of_Binary_Tree {
             int len = queue.size();
             while (len > 0){
                 TreeNode temp = queue.poll();
-                if (temp == null) return deep_min;
                 if (temp.left == null && temp.right == null) return deep_min;
                 if (temp.left != null) queue.offer(temp.left);
                 if (temp.right != null) queue.offer(temp.right);
