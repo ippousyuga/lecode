@@ -4,6 +4,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 /*
 * 104. 二叉树的最大深度
+* 层次遍历二叉树，每层存到队列中
+* 每层在队列不为空时 层数加1
 * */
 
 public class Maximum_Depth_of_Binary_Tree {
