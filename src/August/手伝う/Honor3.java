@@ -49,6 +49,7 @@ public class Honor3 {
         Honor3 honor3 = new Honor3();
         System.out.println(honor3.dictationMinDistance("hello world", "hello"));
         // 创建一个BufferedReader对象
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         // 读取第一行数据
         String line = br.readLine();
@@ -70,5 +71,9 @@ public class Honor3 {
         for (int num: nums) {
             System.out.print(num + " ");
         }
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        String s = bufferedReader.readLine();
+        String[] s1 = s.trim().split(" ");
+        for (String x : s1) System.out.println(x);
     }
 }
