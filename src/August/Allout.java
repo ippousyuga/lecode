@@ -2,6 +2,9 @@ package August;
 
 
 import May.ListNode;
+/*
+* 葡萄城笔试题 类似约瑟夫环
+* */
 
 public class Allout {
     public ListNode searchFinal(int [] people){
@@ -14,7 +17,8 @@ public class Allout {
         }
         temp.next = head;
         temp = head;
-        while (temp.next == temp){
+        while (temp.next != temp){
+            step = temp.val;
             for (int i = 1; i < step; i++){
                 temp = temp.next;
             }
