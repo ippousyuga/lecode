@@ -3,7 +3,7 @@ package September;
 * 85. 最大矩形
 * 华为笔试题2进行了修改，输入数组元素为0-9
 * 用到动态规划，先初始化dp为每列连续不为零的值的累加，eg：1，1，1-》1，2，3
-* 然后遍历dp数组，每个元素再自右向左遍历，求出width值为k-j，height为dp[i][j]，求出矩阵面积=height*width
+* 然后遍历dp数组，每个元素再自右向左遍历，求出width值为k-j，height为该行k到j列的最小值，求出矩阵面积=height*width
 * 注意原题输入为char数组，建立dp需要用char数组元素-'0'
 * */
 
@@ -28,8 +28,9 @@ public class Maximal_Rectangle {
             for (int j = 0; j < dp[0].length; j++){
                 if (dp[i][j] == 0) continue;
                 int curHeight = dp[i][j];
-                for (int k = j; k > 0 && dp[i][k] != 0; k--){
-                    int curWidth = k - j + 1;
+                for (int k = j; k >= 0 && dp[i][k] != 0; k--){
+                    int curWidth = j - k + 1;
+                    curHeight = Math.min(curHeight, dp[i][k]);
                     area = Math.max(area, curHeight * curWidth);
                 }
             }
